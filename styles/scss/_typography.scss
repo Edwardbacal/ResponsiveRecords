@@ -1,0 +1,17 @@
+@mixin titleText ($fontSize, $letterSpacing, $lineHeight) {
+    font-family: 'dokdo', 'lato', Helvetica;
+    color: #FFC600;
+    font-size: $fontSize;
+    letter-spacing: $letterSpacing;
+    line-height: $lineHeight;
+    text-decoration: none;
+}
+
+@mixin mainText ($fontSize, $letterSpacing, $lineHeight) {
+    font-family: 'lato', Helvetica, Arial;
+    color: #FAFFFE;
+    font-size: $fontSize;
+    letter-spacing: $letterSpacing;
+    line-height: $lineHeight;
+    list-style: none;
+}
