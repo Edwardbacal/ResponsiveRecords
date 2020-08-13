@@ -221,21 +221,48 @@ textarea {
   overflow: hidden;
 }
 
-body {
-  font-family: "Rubik Mono One";
-}
-
-h1 {
+h1 div {
+  font-family: "Monoton", Helvetica, Arial;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: -3px 3px #1E140E;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(100px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  max-width: 70%;
-  margin: 10vw auto;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 8vw 0 0 0;
   gap: 2vw;
-  font-size: 50px;
-  min-height: 400px;
+  font-size: 7vw;
+  min-height: 60vh;
   justify-items: center;
+  -webkit-animation: typing 3s steps(4, end), span;
+          animation: typing 3s steps(4, end), span;
+  animation-text-align: center;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 40%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 40%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .things {
@@ -248,6 +275,7 @@ h1 {
       flex-wrap: wrap;
   width: 90%;
   margin: 10% auto;
+  scale: 75%;
 }
 
 .scatteredSquares {
@@ -265,11 +293,17 @@ h1 {
 }
 
 .scatteredSquares li {
-  background-color: teal;
+  background-color: #4C8876;
   height: 0;
   padding-top: 100%;
   max-width: 50px;
   border-radius: 1px;
+  -webkit-transition: .1s ease-out;
+  transition: .1s ease-out;
+}
+
+.scatteredSquares li:hover {
+  background-color: #fcdc26;
 }
 
 .scatteredSquares ul li:nth-child(1) {
@@ -456,17 +490,24 @@ h1 {
       grid-template-columns: 13.2fr 7.5fr 5fr;
   -ms-grid-rows: repeat 4 1fr;
       grid-template-rows: repeat 4 1fr;
-  gap: 3%;
+  gap: 4px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .trioBoxes ul li {
-  background: tomato;
+  background: black;
   height: 0;
   padding-top: 100%;
   border-radius: 1px;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.trioBoxes ul li:hover {
+  background: gray;
+  border-radius: 50%;
 }
 
 .circleSquare {
@@ -480,6 +521,10 @@ h1 {
   border-radius: 50%;
   margin-left: 3%;
   position: relative;
+}
+
+.circle:hover {
+  background: black;
 }
 
 .circle ul {
@@ -500,6 +545,10 @@ h1 {
   border-radius: 1px;
 }
 
+.circle ul li:hover {
+  background: gray;
+}
+
 img {
   width: 100%;
 }
@@ -516,11 +565,102 @@ img {
 }
 
 .prong {
-  max-width: 300px;
-  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 42%;
+  height: 330px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.prong:hover {
+  max-width: 150px;
 }
 
 .comb {
   margin-top: 5%;
   max-width: 300px;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.comb:hover {
+  opacity: 0;
+}
+
+.slowdive {
+  font-family: helvetica;
+  font-size: 25px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 22vw;
+  padding-left: 15px;
+  margin-top: 1%;
+}
+
+@media (max-width: 445px) {
+  .comb img {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    margin-top: 70px;
+    width: 90%;
+  }
+  .prong {
+    height: 315px;
+    margin-top: 10%;
+    padding-bottom: 100px;
+  }
+  .prong img {
+    margin-top: 10%;
+  }
+}
+
+body {
+  background-image: url(../assets/paperUnsplashAE.jpg);
+}
+
+header {
+  background-image: linear-gradient(350deg, #0c0404, #010908f2 50%, #081317b8), url("../assets/melc.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  width: 100%;
+}
+
+header p {
+  font-family: 'Work Sans';
+  margin: 0 auto;
+  width: 75%;
+  padding: 2%;
+  line-height: 1.8;
+  font-size: 1.45vmax;
+  text-align: justify;
+  color: #fff;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+header p a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 749px) {
+  header p {
+    font-size: 2vmax;
+  }
 }

@@ -5,34 +5,40 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Responsive Covers</title>
       <link rel="stylesheet" href="styles/style.css">
-      <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
       <script src="https://kit.fontawesome.com/cecc6c5222.js" crossorigin="anonymous"></script>
-      <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <h1>
-    <p hidden>responsive records</p>
-    <span>R</span>
-    <span>E</span>
-    <span>s</span>
-    <span>p</span>
-    <span>o</span>
-    <span>n</span>
-    <span>s</span>
-    <span>i</span>
-    <span>v</span>
-    <span>e</span> 
-    <span> </span>
-    <span>R</span>
-    <span>e</span>
-    <span>c</span>
-    <span>o</span>
-    <span>r</span>
-    <span>d</span>
-    <span>s</span>
-  </h1>
+  <header>
+    <h1>
+      <p hidden>responsive records</p>
+      <div aria-hidden="true">
+        <span>R</span>
+        <span>E</span>
+        <span>s</span>
+        <span>p</span>
+        <span>o</span>
+        <span>n</span>
+        <span>s</span>
+        <span>i</span>
+        <span>v</span>
+        <span>e</span> 
+        <span> </span>
+        <span>R</span>
+        <span>e</span>
+        <span>c</span>
+        <span>o</span>
+        <span>r</span>
+        <span>d</span>
+        <span>s</span>
+      </div>
+    </h1>
 
+  
+    <!-- <p class="hide" id="down"> Hello hello</p> -->
+    <p id="down" class="hide">Responsive records is a web project in which I, <em><a href="https://www.edwarddbacal.com"> Edward Bacal</a></em>, recreate some of my favourite album covers in the context of a responsive web browser. Using HTML, CSS3, and JavaScript, I explore the expanded possibilities and new limitations that come with reinterpreting static, fixed-frame images as dynamic, interactive layouts.</p>
+  </header>
 
   <section class="pygmalion">
     <div class="things">
@@ -96,19 +102,34 @@
     <div class="prongComb">
       <div class="prong">
         <img src="./assets/pygLeft.png" alt=""> 
+        <div class="slowdive">
+          <span>s</span>
+          <span>l</span>
+          <span>o</span>
+          <span>w</span>
+          <span>d</span>
+          <span>i</span>
+          <span>v</span>
+          <span>e</span>
+        </div>
       </div>
 
       <div class="comb">
         <img src="./assets/pygRight.png" alt="">
       </div>
     </div>
+
   
   </div>
-
-
- 
-
 </section>
+
+<script>
+
+  setTimeout(function () {
+    document.getElementById('down').classList.remove('hide');
+  }, 3500);
+
+</script>
 
 </body>
 </html>

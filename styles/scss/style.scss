@@ -1,7 +1,7 @@
 @import 'setup';
 @import 'typography';
 @import 'mixins';
-
+@import 'souvlaki';
 
 // mixins:
 // titleText ($fontSize, $letterSpacing, $lineHeight)
@@ -15,232 +15,46 @@ $background1: #262725;
 $background2: #1E140E;
 $background3: #555F02;
 
-// section {
-//   max-width: 80%;
-//   margin: 0 auto;
-// }
 
 body {
-  font-family: "Rubik Mono One";
+  background-image: url(../assets/paperUnsplashAE.jpg);
 }
 
-h1 {
-  display: grid;
-  // grid-template-columns: repeat(6, 1fr);
-   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  max-width: 70%;
-  margin: 10vw auto;
-  gap: 2vw;
-  font-size: 50px;
-  min-height: 400px;
-  justify-items: center;
-}
-
-.things {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 90%;
-  margin: 10% auto;
-
-}
-
-
-.scatteredSquares {
-  min-width: 250px;
-  max-width: 300px;
-  margin: 0 5% 10% 0;
-}
-
-.scatteredSquares ul {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 1.5vw;
-}
-
-.scatteredSquares li {
-  background-color: teal;
-  height: 0;
-  padding-top: 100%;
-  max-width: 50px;
-  border-radius: 1px;
-}
-
-.scatteredSquares ul li:nth-child(1) {
-  grid-column: 1 / 2;
-  grid-row: 1;
-}
-
-.scatteredSquares ul li:nth-child(2) {
-  grid-column: 1 / 2;
-  grid-row: 2;
-}
-
-.scatteredSquares ul li:nth-child(3) {
-  grid-column: 1 / 2;
-  grid-row: 3;
-}
-
-.scatteredSquares ul li:nth-child(4) {
-  grid-column: 2 / 3;
-  grid-row: 3;
-}
-
-.scatteredSquares ul li:nth-child(5) {
-  grid-column: 2 / 3;
-  grid-row: 4;
-}
-
-.scatteredSquares ul li:nth-child(6) {
-  grid-column: 2 / 3;
-  grid-row: 5;
-}
-
-.scatteredSquares ul li:nth-child(7) {
-  grid-column: 3 / 4;
-  grid-row: 3;
-}
-
-.scatteredSquares ul li:nth-child(8) {
-  grid-column: 3 / 4;
-  grid-row: 4;
-}
-
-.scatteredSquares ul li:nth-child(9) {
-  grid-column: 3 / 4;
-  grid-row: 5;
-}
-
-
-.scatteredSquares ul li:nth-child(10) {
-  grid-column: 4 / 5;
-  grid-row: 5;
-  margin-top: -100%;
-}
-
-.scatteredSquares ul li:nth-child(11) {
-  grid-column: 4 / 5;
-  grid-row: 6;
-  margin-top: -100%;
-}
-
-.scatteredSquares ul li:nth-child(12) {
-  grid-column: 4 / 5;
-  grid-row: 7;
-  
-}
-
-.scatteredSquares ul li:nth-child(13) {
-  grid-column: 5 / 6;
-  grid-row: 3;
-}
-
-.scatteredSquares ul li:nth-child(14) {
-  grid-column: 5 / 6;
-  grid-row: 4;
-}
-
-.scatteredSquares ul li:nth-child(15) {
-  grid-column: 5 / 6;
-  grid-row: 5;
-}
-
-.scatteredSquares ul li:nth-child(16) {
-  grid-column: 6 / 7;
-  grid-row: 3;
-}
-
-.scatteredSquares ul li:nth-child(17) {
-  grid-column: 6 / 7;
-  grid-row: 4;
-}
-
-.scatteredSquares ul li:nth-child(18) {
-  grid-column: 6 / 7;
-  grid-row: 5;
-}
-
-.scatteredSquares ul li:nth-child(19) {
-  grid-column: 8 / 9;
-  grid-row: 5;
-  margin-top: -100%;
-}
-
-.scatteredSquares ul li:nth-child(20) {
-  grid-column: 8 / 9;
-  grid-row: 6;
-  margin-top: -100%;
-}
-
-.scatteredSquares ul li:nth-child(21) {
-  grid-column: 8 / 9;
-  grid-row: 7;
-  // margin-top: -100%;
-}
-
-.trioBoxes {
-  min-width: 15%;
-  margin: 6% 0 -5% 0;
-    ul {
-      display: grid;
-      grid-template-columns: 13.2fr 7.5fr 5fr;
-      grid-template-rows: repeat (4 1fr);
-      gap: 3%;
-      align-items: center;
-        li {
-          background: tomato;
-          height: 0;
-          padding-top: 100%;
-          border-radius: 1px;
-        }
-    }
-}
-
-.circleSquare {
-  position: relative;
-}
-
-.circle {
-  background: rgba(128, 128, 128, 0.507);
-  height: 30vw;
-  width: 30vw;
-  border-radius: 50%;
-  margin-left: 3%;
-  position: relative;
-    ul {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      max-width: 63px;
-      height: 125px;
-      gap: 5px;
-      position: relative;
-      top: 13.5%;
-      left: 20%;
-        li {
-          background: black;
-          border-radius: 1px;
-        }
-    }
-}
-
-img {
+header {
+  // background-image: linear-gradient(to bottom, rgba(26, 6, 15, 0.98), #ffe7e3d4 50%, #f8f3f000), url("../assets/melc.png");
+  background-image: linear-gradient(350deg, rgb(12, 4, 4), #010908f2 50%, #081317b8), url("../assets/melc.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
   width: 100%;
 }
 
-.prongComb {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-left: 5%;
+header p {
+  font-family: 'Work Sans';
+  margin: 0 auto;
+  width: 75%;
+  padding: 2%;
+  line-height: 1.8;
+  font-size: 1.45vmax;
+  text-align: justify;
+  color: #fff;
+  transition: .1s;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    
 }
 
 
-.prong {
-  max-width: 300px;
-  height: 150px;
-}
+// ashley edwards background paper photo
 
-.comb {
-  margin-top: 5%;
-  max-width: 300px;
+
+
+
+@media (max-width: 749px){
+  header p {
+    font-size: 2vmax;
+  }
 }
