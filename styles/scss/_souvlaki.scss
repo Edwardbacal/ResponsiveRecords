@@ -1,34 +1,3 @@
-h1 div {
-  font-family: "Monoton", Helvetica, Arial;
-  text-transform: uppercase;
-  color: #fff;
-  text-shadow: -3px 3px #1E140E;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 8vw 0 0 0;
-  gap: 2vw;
-  font-size: 7vw;
-  min-height: 60vh;
-  justify-items: center;
-  animation: typing 3s steps(4, end),
-  span {
-    text-align: center;
-  }
-}
-
-@keyframes typing {
-  from { width: 40% }
-  to { width: 100% }
-}
-
-
-
-.hide {
-  opacity: 0;
-  pointer-events: none;
-}
 
 .things {
   display: flex;
@@ -252,7 +221,7 @@ img {
   height: 330px;
   transition: 1s;
     &:hover {
-      max-width: 150px;
+      max-width: 50px;
     }
 }
 

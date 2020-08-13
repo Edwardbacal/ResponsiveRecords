@@ -30,18 +30,49 @@ header {
   width: 100%;
 }
 
+h1 div {
+  font-family: "Monoton", Helvetica, Arial;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: -3px 3px #1E140E;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 8vw 0 0 0;
+  gap: 2vw;
+  font-size: 7vw;
+  min-height: 60vh;
+  justify-items: center;
+  animation: typing 3s steps(4, end),
+  span {
+    text-align: center;
+  }
+}
+
+@keyframes typing {
+  from { width: 40% }
+  to { width: 100% }
+}
+
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
 header p {
   font-family: 'Work Sans';
   margin: 0 auto;
   width: 75%;
   padding: 2%;
   line-height: 1.8;
-  font-size: 1.45vmax;
+  font-size: 1.8vmax;
   text-align: justify;
   color: #fff;
-  transition: .1s;
+  // transition: .1s;
     a {
-      text-decoration: none;
+      // text-decoration: none;
       color: #fff;
     }
     
@@ -50,11 +81,21 @@ header p {
 
 // ashley edwards background paper photo
 
+@media (max-width: 1216px){
+  h1 div {
+    animation: typing 2s steps(2, end);
+  }
+}
 
 
-
-@media (max-width: 749px){
+@media (max-width: 1000px){
   header p {
-    font-size: 2vmax;
+    font-size: 1.9vmax;
+  }
+}
+
+@media (max-width: 348px){
+  h1 div {
+    animation: typing 1s steps(1, end);
   }
 }
