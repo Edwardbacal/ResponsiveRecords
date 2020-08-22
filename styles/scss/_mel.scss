@@ -1,0 +1,161 @@
+.mel {
+  position: relative;
+  background: #ffffffdc;
+  min-height: 73vmax;
+  overflow: -moz-hidden-unscrollable;
+}
+
+.melBord {
+  border: 1px solid lightpink;
+  height: 800px;
+  width: 80%;
+  margin: 10%;
+}
+
+.back {
+  background-image: url(../assets/Mel/melBack.png);
+  background-size: 100%;
+  width: 600px;
+  min-height: 450px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+    img {
+      position: absolute;
+    }
+}
+
+.ee {
+  max-width: 52.5vw;
+  top: -44px;
+  left: -47.5vw;
+  z-index: 21;
+}
+
+.n {
+  max-width: 35vw;
+  top: 10px;
+  left: -11.2vw;
+  z-index: 20;
+}
+
+.o {
+  max-width: 31vw;
+  top: -5.2vw;
+  left: -3.1vw;
+  z-index: 18;
+}
+
+.d {
+  max-width: 26.7vw;
+  top: 0px;
+  right: 42vw;
+  z-index: 17;
+}
+
+.i {
+  max-width: 31vw;
+  top: -68px;
+  right: 33.5vw;
+  z-index: 16;
+}
+
+.s {
+  max-width: 30vw;
+  top: -56px;
+  right: 24vw;
+  z-index: 15;
+}
+
+.c {
+  max-width: 31vw;
+  top: -7.4vw;
+  right: 2.9vw;
+  z-index: 14;
+}
+
+.oo {
+  max-width: 34.5vw;
+  top: -22.3vw;
+  right: -4.7vw;
+  z-index: 13;
+}
+
+.f {
+  max-width: 41.5vw;
+  top: 58px;
+  left: -105px;
+  z-index: 14;
+}
+
+.u {
+  max-width: 55.3vw;
+  top: -2.45vw;
+  left: -88px;
+  z-index: 13;
+}
+
+.t {
+  max-width: 34vw;
+  top: 65px;
+  left: 16.2vw;
+  z-index: 12;
+}
+
+.uu {
+  max-width: 60vw;
+  top: -80px;
+  right: 31.6vw;
+  z-index: 11;
+}
+
+.r {
+  max-width: 26.2vw;
+  top: 139px;
+  right: 11.5vw;
+  z-index: 10;
+}
+
+.e {
+  max-width: 41.5vw;
+  top: -9.1vw;
+  right: 10.4vw;
+}
+
+
+.noDiscoText {
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: #FFBFB4;
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1vmax;
+  line-height: 1.2;
+  letter-spacing: .07vmax;
+  z-index: 30;
+  text-shadow: -1px 1px #fff;
+    ul {
+      margin-right: 50px;
+      z-index: 30;
+    }
+}
+
+.info {
+  display: flex;
+  h2 {
+    margin-right: 20px;
+    z-index: 30;
+  }
+  ol {
+    min-width: 112px;
+    z-index: 30;
+  }
+}
+
+@media (max-width: 420px) {
+  .info h2 {
+      min-width: 0px;
+  }
+}

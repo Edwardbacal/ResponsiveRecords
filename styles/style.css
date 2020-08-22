@@ -221,6 +221,11 @@ textarea {
   overflow: hidden;
 }
 
+.pygmalion {
+  background-image: url(../assets/paperUnsplashAE.jpg);
+  padding: 5px 0 50px 0;
+}
+
 .things {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -584,8 +589,180 @@ img {
   }
 }
 
+.mel {
+  position: relative;
+  background: #ffffffdc;
+  min-height: 73vmax;
+  overflow: -moz-hidden-unscrollable;
+}
+
+.melBord {
+  border: 1px solid lightpink;
+  height: 800px;
+  width: 80%;
+  margin: 10%;
+}
+
+.back {
+  background-image: url(../assets/Mel/melBack.png);
+  background-size: 100%;
+  width: 600px;
+  min-height: 450px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.back img {
+  position: absolute;
+}
+
+.ee {
+  max-width: 52.5vw;
+  top: -44px;
+  left: -47.5vw;
+  z-index: 21;
+}
+
+.n {
+  max-width: 35vw;
+  top: 10px;
+  left: -11.2vw;
+  z-index: 20;
+}
+
+.o {
+  max-width: 31vw;
+  top: -5.2vw;
+  left: -3.1vw;
+  z-index: 18;
+}
+
+.d {
+  max-width: 26.7vw;
+  top: 0px;
+  right: 42vw;
+  z-index: 17;
+}
+
+.i {
+  max-width: 31vw;
+  top: -68px;
+  right: 33.5vw;
+  z-index: 16;
+}
+
+.s {
+  max-width: 30vw;
+  top: -56px;
+  right: 24vw;
+  z-index: 15;
+}
+
+.c {
+  max-width: 31vw;
+  top: -7.4vw;
+  right: 2.9vw;
+  z-index: 14;
+}
+
+.oo {
+  max-width: 34.5vw;
+  top: -22.3vw;
+  right: -4.7vw;
+  z-index: 13;
+}
+
+.f {
+  max-width: 41.5vw;
+  top: 58px;
+  left: -105px;
+  z-index: 14;
+}
+
+.u {
+  max-width: 55.3vw;
+  top: -2.45vw;
+  left: -88px;
+  z-index: 13;
+}
+
+.t {
+  max-width: 34vw;
+  top: 65px;
+  left: 16.2vw;
+  z-index: 12;
+}
+
+.uu {
+  max-width: 60vw;
+  top: -80px;
+  right: 31.6vw;
+  z-index: 11;
+}
+
+.r {
+  max-width: 26.2vw;
+  top: 139px;
+  right: 11.5vw;
+  z-index: 10;
+}
+
+.e {
+  max-width: 41.5vw;
+  top: -9.1vw;
+  right: 10.4vw;
+}
+
+.noDiscoText {
+  width: 92%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+  color: #FFBFB4;
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1vmax;
+  line-height: 1.2;
+  letter-spacing: .07vmax;
+  z-index: 30;
+  text-shadow: -1px 1px #fff;
+}
+
+.noDiscoText ul {
+  margin-right: 50px;
+  z-index: 30;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info h2 {
+  margin-right: 20px;
+  z-index: 30;
+}
+
+.info ol {
+  min-width: 112px;
+  z-index: 30;
+}
+
+@media (max-width: 420px) {
+  .info h2 {
+    min-width: 0px;
+  }
+}
+
 body {
-  background-image: url(../assets/paperUnsplashAE.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#52072a), color-stop(50%, #4c3fc0), to(#ff8f4f));
+  background-image: linear-gradient(to bottom, #52072a, #4c3fc0 50%, #ff8f4f);
 }
 
 header {
@@ -593,8 +770,6 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  margin: 0;
-  width: 100%;
 }
 
 h1 div {
@@ -641,19 +816,58 @@ h1 div {
   pointer-events: none;
 }
 
-header p {
+p {
   font-family: 'Work Sans';
+  font-size: 1.5vmax;
+  color: #fff;
+  text-align: center;
+}
+
+header p {
   margin: 0 auto;
   width: 75%;
-  padding: 2%;
+  padding: 2% 2% 50px 2%;
   line-height: 1.8;
-  font-size: 1.8vmax;
   text-align: justify;
-  color: #fff;
 }
 
 header p a {
+  border-bottom: 2px dotted #fff;
+}
+
+a {
+  text-decoration: none;
   color: #fff;
+}
+
+i {
+  padding: 5px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  outline: none;
+}
+
+i:hover {
+  -webkit-transform: rotate(1turn);
+          transform: rotate(1turn);
+}
+
+.credit {
+  padding: 8vh 5vh;
+}
+
+button {
+  position: absolute;
+  top: -5vmax;
+  right: 3%;
+  font-size: 3vmax;
+  color: #fff;
+  background: none;
+  border: none;
+}
+
+button:hover {
+  color: #ffd900;
 }
 
 @media (max-width: 1216px) {
@@ -664,7 +878,7 @@ header p a {
 }
 
 @media (max-width: 1000px) {
-  header p {
+  p {
     font-size: 1.9vmax;
   }
 }

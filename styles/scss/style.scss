@@ -2,6 +2,7 @@
 @import 'typography';
 @import 'mixins';
 @import 'souvlaki';
+@import 'mel';
 
 // mixins:
 // titleText ($fontSize, $letterSpacing, $lineHeight)
@@ -15,19 +16,15 @@ $background1: #262725;
 $background2: #1E140E;
 $background3: #555F02;
 
-
 body {
-  background-image: url(../assets/paperUnsplashAE.jpg);
+  background-image: linear-gradient(to bottom, rgb(82, 7, 42), #4c3fc0 50%, #ff8f4f);
 }
 
 header {
-  // background-image: linear-gradient(to bottom, rgba(26, 6, 15, 0.98), #ffe7e3d4 50%, #f8f3f000), url("../assets/melc.png");
   background-image: linear-gradient(350deg, rgb(12, 4, 4), #010908f2 50%, #081317b8), url("../assets/melc.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  margin: 0;
-  width: 100%;
 }
 
 h1 div {
@@ -61,21 +58,58 @@ h1 div {
   pointer-events: none;
 }
 
-header p {
+p {
   font-family: 'Work Sans';
+  font-size: 1.5vmax;
+  color: #fff;
+  text-align: center;
+}
+
+header p {
   margin: 0 auto;
   width: 75%;
-  padding: 2%;
+  padding: 2% 2% 50px 2%;
   line-height: 1.8;
-  font-size: 1.8vmax;
   text-align: justify;
-  color: #fff;
   // transition: .1s;
     a {
-      // text-decoration: none;
-      color: #fff;
+      border-bottom: 2px dotted #fff ;
     }
-    
+}
+
+ a {
+    text-decoration: none;
+    color: #fff;
+    }
+
+    i {
+      padding: 5px;
+      transition: .4s;
+      outline: none;
+        &:hover {
+          transform: rotate(1turn);
+        }
+    }
+
+section {
+  // position: relative;
+}
+
+.credit {
+  padding: 8vh 5vh;
+}
+
+button {
+  position: absolute;
+  top: -5vmax;
+  right: 3%;
+  font-size: 3vmax;
+  color: #fff;
+  background: none;
+  border: none;
+    &:hover {
+      color: rgb(255, 217, 0);
+    }
 }
 
 
@@ -89,7 +123,7 @@ header p {
 
 
 @media (max-width: 1000px){
-  header p {
+  p {
     font-size: 1.9vmax;
   }
 }
