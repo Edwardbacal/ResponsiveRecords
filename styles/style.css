@@ -594,6 +594,7 @@ img {
   background: #ffffff;
   min-height: 73vmax;
   overflow: -moz-hidden-unscrollable;
+  overflow: hidden;
 }
 
 .melBord {
