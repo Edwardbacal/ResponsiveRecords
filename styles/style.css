@@ -591,7 +591,7 @@ img {
 
 .mel {
   position: relative;
-  background: #ffffffdc;
+  background: #ffffff;
   min-height: 73vmax;
   overflow: -moz-hidden-unscrollable;
 }
@@ -730,7 +730,6 @@ img {
   line-height: 1.2;
   letter-spacing: .07vmax;
   z-index: 30;
-  text-shadow: -1px 1px #fff;
 }
 
 .noDiscoText ul {
@@ -754,6 +753,17 @@ img {
   z-index: 30;
 }
 
+.info ol li:hover {
+  color: #ff00bf;
+}
+
+.stopTrax {
+  color: #ff00bf;
+  padding-top: 3px;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
 @media (max-width: 420px) {
   .info h2 {
     min-width: 0px;
@@ -761,8 +771,7 @@ img {
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#52072a), color-stop(50%, #4c3fc0), to(#ff8f4f));
-  background-image: linear-gradient(to bottom, #52072a, #4c3fc0 50%, #ff8f4f);
+  background-image: linear-gradient(175deg, #52072a, #4c3fc0 50%, #ff8f4f);
 }
 
 header {

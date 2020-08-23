@@ -1,6 +1,6 @@
 .mel {
   position: relative;
-  background: #ffffffdc;
+  background: #ffffff;
   min-height: 73vmax;
   overflow: -moz-hidden-unscrollable;
 }
@@ -135,7 +135,6 @@
   line-height: 1.2;
   letter-spacing: .07vmax;
   z-index: 30;
-  text-shadow: -1px 1px #fff;
     ul {
       margin-right: 50px;
       z-index: 30;
@@ -151,7 +150,16 @@
   ol {
     min-width: 112px;
     z-index: 30;
+      li:hover {
+        color: rgb(255, 0, 191);
+      }
   }
+}
+
+.stopTrax {
+  color: rgb(255, 0, 191);
+  padding-top: 3px;
+  transition: .1s;
 }
 
 @media (max-width: 420px) {
