@@ -4,8 +4,6 @@ setTimeout(function () {
 }, 3050);
 
 
-
-
 // Stop existing audio when you click a new audio button. (Thanks to this! https://stackoverflow.com/questions/43430897/javascript-to-stop-playing-sound-when-another-starts)
 const allAudios = document.querySelectorAll('audio');
 function stopAllAudio() {
@@ -19,6 +17,7 @@ const ndf = document.querySelectorAll('li.ndfTrax');
 ndf.forEach(function (track) {
   track.addEventListener('click', playTrack)
 })
+
 const stop = document.querySelector('li.stopTrax');
 
 function playTrack(e){
@@ -38,36 +37,22 @@ function stopTrack() {
   stop.classList.add('hide');
 };
 
+// click on circle to play loop
+const lfoAudio = document.querySelector('.lfoAudio');
+const lime = document.querySelector('.limeCircle')
 
+const circle = document.querySelector('.purpCircle')
+circle.addEventListener('click', function(event){
+  const lfoAudio = document.querySelector('.lfoAudio');
+  console.log(event);
+  lfoAudio.play();
+  lfoAudio.loop=true;
+  lime.classList.remove('hide');
+});
 
-
-
-// function stopTrack(e) {
-//   const audio = document.querySelector(`audio[id=${e.target.id}]`);
-//   if (audio.play() = true) {
-//     audio.pause();
-//     audio.currentTime = 0;
-//   }
-// };
-
-
-
-
-// function playTrack(){
-//   console.log(audio);
-  
-  // if (track.id === audio.id) {
-  // } else {
-    //   return
-  // };
-
-
-
-
-
-
-
-// ndf.addEventListener('click', function(e){
-//   console.log(e.currentTarget)
-//   console.log(audio)
-// })
+// change circle colour / pause audio
+lime.addEventListener('click', function (){
+  console.log('removed');
+  lfoAudio.pause();
+  lime.classList.add('hide');
+  });

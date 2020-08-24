@@ -1,0 +1,139 @@
+.advance {
+  background: #ed8a00;
+  min-height: 100vh;
+  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;
+  position: relative;
+}
+
+.lfo {
+  margin-left: 29%;
+  height: 60vh;
+  display: grid;
+  grid-template-rows: 1fr 2.5fr 1fr .66fr 13fr;
+  padding: 7.5% 7.5% 0 0;
+    li {
+      border-bottom: 1px solid white;
+      filter: drop-shadow(0px 0px .5px #fff);
+    }
+    li:first-child {
+      background: white;
+    }
+    li:last-child {
+      border-bottom: none;
+      margin-top: auto;
+      filter: none;
+    }
+    li:nth-child(2) {
+      padding: 2px 0;
+    }
+    li:nth-child(3) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    li:nth-child(4) {
+      // margin-bottom: 3vw;
+    }
+}
+
+   .lfo{
+    p, 
+    h2,
+    h3,
+    h4,
+    .seven {
+      font-family: "roboto condensed";
+      color: #fff;
+      font-family: "roboto condensed";
+      text-transform: uppercase;
+      filter: none;
+      font-size: 20px;
+      letter-spacing: .1vw;
+      padding: 1px;
+    }
+    p {
+      font-size: 1vmax;
+    }
+    h4 {
+      font-size: 1.3vmax;
+    }
+    .seven {
+      background: #fff;
+      color: #ed8a00;
+      font-size: 7px;
+      text-align: right;
+      padding: 1px 1px 9px 15px;
+      height: 100%;
+    }
+  }
+
+.lfoInfo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.lfoName {
+  display: flex;
+  flex-direction: column;
+  // max-width: 100px;
+  justify-content: space-between;
+  align-items: left;
+  width: 19vw;
+    p {
+      width: 100%;
+      min-width: 200px;
+      text-align: justify;
+    }
+}
+
+.lfoLetters {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1vw;
+    img {
+      width: 32.5%;
+    }
+}
+
+.purpCircle,
+.limeCircle {
+  background: #876598;
+  border-radius: 50%;
+  height: 38vmin;
+  width: 38vmin;
+  margin-top: 10px;
+  // transition: .2s, filter .5s;
+    // &:hover{
+    //   background: lime;
+    //   filter: drop-shadow(0px 0px 40px #fff);
+    // }
+}
+
+.limeCircle {
+  background: #ff6428;
+  filter: drop-shadow(0px 0px 50px #fff);
+  position: absolute;
+  transition: 1.5s ease-out;
+}
+
+.sevens {
+  position: absolute;
+  left: 0%;
+  top: 30%;
+  height: 285px;
+  width: 160px;
+  overflow: hidden;
+    img {
+      position: absolute;
+    }
+    img:nth-child(2) {
+      left: -33px;
+      top: 23px;
+    }
+    img:nth-child(3) {
+      left: -67px;
+      top: 46px;
+    }
+}
